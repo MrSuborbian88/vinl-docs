@@ -1,0 +1,21 @@
+*Reset* allows you to empty a course of user data, while retaining the activities and other settings. Keep in mind when choosing items you will delete, your chosen user data from this course *forever*!
+
+You can delete the following in any combination:
+
+  * Students
+  * Teachers
+  * Course Events
+  * Logs
+  * Groups
+
+You can remove all posts from selected forum types:
+
+  * The news forum
+  * Teacher forum
+  * A single simple discussion 
+  * Each person posts one discussion 
+  * Standard forum for general use
+  
+You can remove all attempts from all quizzes.
+
+You can also specify a new course start date.
