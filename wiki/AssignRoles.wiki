@@ -3,11 +3,17 @@
 Assigning roles is done for/in a particular context, such as "site" and "course."  While the process is similar for each context, the approach to role assignment may be different.   Here are several contexts and ways to find the Assign Roles page.
 
 --System: _Site Administration > Users > Permissions > Assign system roles_
+
 --Front page: _Site Administration > Front Page > Front Page roles_
+
 --Course category: Assign Roles link in course categories page
+
 --Course: Assign Roles link in course administration block
+
 --Module: "Locally assigned roles" tab in editing activity page
+
 --Block: Assign Roles link in course block (with editing turned on)
+
 --User: Roles tab in user profile page
 
 The Assign Roles page lists the names of users assigned to each role (unless there are more than 10 users, in which case this is stated).
