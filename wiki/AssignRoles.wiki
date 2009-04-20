@@ -23,11 +23,17 @@ The Assign Roles page lists the names of users assigned to each role (unless the
 By assigning a role to a user in a certain context, you grant them the permissions contained in that role for the current context and all lower contexts.  The list of contexts in hierarchical order is as follows:
 
 --System (no parent)
+
 --Front page (parent = system)
+
 --Course category (parent = system)
+
 --Course (parent = category or system)
+
 --Module (parent = course or system)
+
 --Block (parent = course or system)
+
 --User (parent = system)
 
 Inheritance will kick in if a role is assigned at a higher level. For example, if a user is assigned a Teacher role in a particular course category then the user will have this role in all courses within the category.  Roles will only work if the role assignment is made in the correct context. For example, a Teacher role should be assigned in the course or course category context.
@@ -36,7 +42,8 @@ Inheritance will kick in if a role is assigned at a higher level. For example, i
 
 "Student", "Teacher", and "Course Creator" are some of the predefined roles that come with VINL. The site administrator may have created additional roles.
 To assign a role:
---Choose the type of role you wish to assign. For example, if we wanted to assign a Student role to Martin, we'd choose "Student" from the list of roles. 
+--Choose the type of role you wish to assign. For example, if we wanted to assign a Student role to Martin, we'd choose "Student" from the list of roles.
+
 --Once you have chosen a role, two lists appear: a list of users who currently have that role, and a list of users who don't. We can select Martin in the second list, and use the left-facing arrow button to add Martin to the list of Students. Multiple users may be selected by holding down the Ctrl key while clicking on the users' names.
 
 Removing someone from a role is done by moving the user from the left column to the right.
@@ -63,8 +70,11 @@ You can assign roles and set up role overrides for your front page in exactly th
 
 To assign a user a role for a front page activity:
 -- Assign the user a front page role, such as student, in _Administration > Front Page > Front Page roles_
+
 -- Click the "Locally assigned roles" tab in editing activity page for the front page activity
+
 -- Choose the type of role you wish to assign.
+
 -- Use the left-facing arrow button to add a particular user to the list of users with the role.
 
 If a user is unassigned from a front page role AFTER being assigned a role for a front page activity, they remain assigned the role for the front page activity.
