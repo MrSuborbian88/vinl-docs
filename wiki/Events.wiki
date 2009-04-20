@@ -1,0 +1,23 @@
+*Events* are any sort of happening with a description that are can be added to the calendar.  Events consist of:
+  * Name
+  * Description
+  * Date
+  * Duration (if it applies)
+  * Repeats (if it applies)
+
+Events can pertain to:
+  * Entire Site (Able to be seen by all VINL users and only creatable by Administrators)
+  * Course (Able to be seen by all course participants and creatable by Teachers)
+  * Individual (Able to be seen by user that created it)
+
+==How to add an Event==
+To add a calendar event
+  # Click month on Calendar to get an expanded month view
+  # In Calendar view click the New Event button
+  # On a New Event page select the type of event
+    ** A '''User Event''' will only be visible by the user currently logged in (i.e. the one creating the event);
+    ** A '''Group Event''' will be visible to a particular Group on the course (chosen from a drop-down list);
+    ** A '''Course Event''' will be visible to participants on the course in question. Only users with editing rights on a course can add course events;
+    ** A '''Site Event''' is a "global" event - visible in every course and on the calendar on the home page. Only Administrators can add site events.
+  # Set the event properties
+  # Click Save changes
