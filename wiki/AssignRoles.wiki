@@ -56,8 +56,8 @@ You can assign roles and set up role overrides for your front page in exactly th
 ==Assigning a role for a front page activity==
 
 To assign a user a role for a front page activity:
--- Assign the user a front page role, such as student, in _Administration > Front Page > Front Page roles_.
--- Click the "Locally assigned roles" tab in editing activity page for the front page activity.
+-- Assign the user a front page role, such as student, in _Administration > Front Page > Front Page roles_
+-- Click the "Locally assigned roles" tab in editing activity page for the front page activity
 -- Choose the type of role you wish to assign.
 -- Use the left-facing arrow button to add a particular user to the list of users with the role.
 
