@@ -5,7 +5,7 @@
 Joining and Leaving a Class
 
 
-= Details =
+= Join/Leave =
 
 After logging into VINL, the home page will be displayed.  All of the courses currently in the VINL system will be listed on this page.  In order to enroll in a class, it must be listed here and, if necessary, you must know the password for the class.
 
