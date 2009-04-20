@@ -1,0 +1,50 @@
+*Backups* allow Teachers or Administrators to save the current state of a course (which includes user data, course files, etc.).
+
+Generally, you will not have to worry about '''course backups''', as the primary VINL administrator will have set a schedule of site wide backups. However, as a teacher with editing privileges, it is good practice to download a recent backup to your own computer for additional protection.
+
+
+==Creating a course backup==
+To create a course backup:
+  # Click Backup in the course administration block.
+  # Choose which activities you want to include in the backup, and whether to include user data, by using the Include All/None links at the top of the page and/or by selecting the checkboxes next to each module or activity name. User data consists of all student files, submissions, forum postings, glossary entries, etc.
+  # Select backup options (see below), then click the Continue button to start the backup process.
+  # On the next page, you can preview the files and users that Moodle will include in the backup and, if you wish, change the suggested backup filename, which is backup-COURSESHORTNAME-DATE-TIME.zip.
+  # Click the Continue button.
+  # On the next page, the progress of the backup is displayed together with a report if it was successful. You should see the message "Backup completed successfully" at the bottom of the page. Click the Continue button.
+  # You will then be taken to the backupdata directory in the files area for your course. Click the filename of the backup file to download it to your desktop.
+
+==Backup options==
+  * Users - Whether you want to backup the content concerning all the registered students in your site, only course students or no students at all. 
+  * Logs - This backs up all course activity logs.
+  * User files - This backs up all student submissions for assignments and other file uploads.
+  * Course files - This backs up any file stored in the Files area for the course.
+
+==Creative uses==
+The backup and restore processes can offer the teacher and administrators many creative solutions.
+  * Duplicating courses or specific activities in one course to another course
+  * Updating a production VINL site course, with material from a localhost site course
+  * In earlier versions of VINL, a way of rolling a course forward without past student activity
+
+
+==Automated Course Backups==
+The backups page enables administrators to configure automated course backups and a backup schedule. 
+Automated course backups runs the same functions as individual [[Course backup|course backups]]. It's a good idea to schedule backups for when your server isn't usually busy. Running the backup tool over all the courses can be processor-intensive, so you shouldn't run it when there are a lot of students trying to access the server.
+
+In order to make scheduled backups, you have to set up CRON to run periodically. Please refer to the [[Cron|cron instructions]].
+
+==Setting a backup schedule==
+
+To set the backup schedule:
+  # Click the Active checkbox. This turns on the automated backup system.
+  # Click the days of the week to run the backup.
+  # Set the execution time for the backup process. For most servers, early morning will be the best time.  Keep in mind the time zone your server is using.
+  # Set the "Save to..." path. If you can, choose a backup path on another machine or on a different drive than the one Moodle is on. You don’t want to lose your backups at the same time you lose your Moodle site if the drive fails. If you leave the field blank, then backup zip files will be saved in the backup folder of each course files folder.
+  # Click the "Save changes" button.
+
+Once you've set up your backup schedule, Moodle will automatically create archives of all the courses on the server at the time you specified. Once the backup is complete, Moodle will send you an email describing the status of the backup.
+
+
+==Course versus site backups==
+
+  * Automated course backups are more expensive in terms of time and CPU usage. The recovery time to have your site running again is longer. 
+  * Course backups are useful for obtaining "fresh" copies of courses to be re-used or distributed individually, however they should never be used as a primary backup system (unless your hosting doesn't allow the preferred site backups). 
