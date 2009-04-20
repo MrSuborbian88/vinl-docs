@@ -3,4 +3,4 @@
 Reports have the option to be displayed on page or downloaded in either a text, Excel, or ODS format.
 
 == Filters ==
-Filters can change the report displays to target the desired information.  Reports can be filtered by course, user, date, activities, and actions.  
+Filters can change the content displayed in the report to target the desired information.  Reports can be filtered by course, user, date, activities, and actions.  
