@@ -1,0 +1,27 @@
+The *Files* menu is located in a course's administration block|. Depending upon privileges, it is a place to upload files and find VINL created files such as backup(s) of the course.  The files area can contain PDFs, HTML, Multimedia, word processing, presentations or any digital content for inclusion in an activity, resource, course section, link, or a direct download.  
+
+The files link shows a list of files and folders, depending upon the viewer's role. The list will contain the name, size, last time modified and potential action(s) to modify that item.
+
+To preview any file,  click on its name. Your web browser will take care of either displaying it or downloading it to your computer.
+
+
+==Tools==
+===Move, delete, archive ===
+It is possible to move, delete  completely or zip archive one or more items. First select the items on the list by ticking the box on the left.  Then use the "With Choosen files" pull down menu at the bottom of the list to take the action. 
+
+===Make a folder===
+The "Make a folder" button is at the bottom of the list.  The initial file structure for a course is simple.  Modules within VINL may create their own folder.  Generally speaking,a teacher can make one or more folders any place in the "files"  area.   These folders can be seen when adding an image or resource from within the course.
+
+===Upload a file===
+On the bottom of every files screen is a "Upload a file" button.  This will allow a single file upload.   Uploading a file with the same name as an existing file it will automatically overwrite the existing file without a warning.
+
+  * By first zipping a group of files or a folder of files, you can upload that file and VINL will recognize this and give you an unzip action link.  The unzip action will create the files and or folders in that place in the administrative files section.
+
+===Editing some files===
+HTML and text files can be edited when the edit action is displayed on the left. Other files will need to be edited on your local computer and uploaded again. 
+
+==Student views of files==
+Using the add resource menu, the teacher can give access to a directory (folder) and everything under it.
+
+==Special sub-directories==
+There are two standard sub-directories that are used by VINL for storing data, namely the backupdata (which is where course backups are stored) and moddata directories which are not available to students and teachers without editing privileges.
