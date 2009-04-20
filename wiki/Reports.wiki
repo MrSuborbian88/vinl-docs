@@ -3,4 +3,7 @@
 Reports have the option to be displayed on page or downloaded in either a text, Excel, or ODS format.
 
 == Filters ==
-Filters can change the content displayed in the report to target the desired information.  Reports can be filtered by course, user, date, activities, and actions.  
+Filters can change the content displayed in the report to target the desired information.  Reports can be filtered by course, user, date, activities, and actions.
+
+==Live logs from the past hour==
+Live logs shows all the activity from the past hour that is relevant to the user.  This report is integrated with active links to the user and action.
