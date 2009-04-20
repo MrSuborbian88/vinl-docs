@@ -60,29 +60,29 @@ If the site administrator has allowed the teacher to set a course [Themes|theme]
 ===Is this a meta course?===
 A [Metacourses|metacourse] automatically enrolls its participants from other courses.  For example, for every course that is a "child" of the metacourse, all students in the child course are enrolled in the metacourse.
 
-==Enrolments==
-===Enrolment plugins===
-This setting allows you to choose an interactive [Enrolment plugins|enrolment plugin], such as [Internal enrolment|internal enrolment] or [Paypal]. If you use a non-interactive enrolment plugin, this setting has no effect.
+==enrollments==
+===enrollment plugins===
+This setting allows you to choose an interactive [enrollment plugins|enrollment plugin], such as [Internal enrollment|internal enrollment] or [Paypal]. If you use a non-interactive enrollment plugin, this setting has no effect.
 
 ===Default role===
 
 From Moodle 1.7 onwards, a default course role, such as student, may be set.
 
 ===Course enrollable===
-This setting only affects interactive enrolment plugins, such as [Internal enrolment|internal enrolment] and [Paypal]. It has no affect at all on non-interactive plugins (e.g. External Database, LDAP). Setting it to "no" or if it is outside the specified date range will result in the student being told the course is "Not enrollable" and being returned to the front page, if they are attempting to enroll using an interactive plugin.
+This setting only affects interactive enrollment plugins, such as [Internal enrollment|internal enrollment] and [Paypal]. It has no affect at all on non-interactive plugins (e.g. External Database, LDAP). Setting it to "no" or if it is outside the specified date range will result in the student being told the course is "Not enrollable" and being returned to the front page, if they are attempting to enroll using an interactive plugin.
 
-_TIP_ If you are using Internal enrolment and you have not set an enrolment key, you should seriously consider setting this to _No_ otherwise any user can enrol on your course.
+_TIP_ If you are using Internal enrollment and you have not set an enrollment key, you should seriously consider setting this to _No_ otherwise any user can enroll on your course.
 
-===Enrolment duration===
+===enrollment duration===
 This setting specifies the number of days a student can be enrolled in this course (starting from the moment they enroll).  Set this value with care - setting it when not required is a common origin of the complaint,  "my students keep disappearing after n days".
 
 _TIP_ This is useful for rolling courses without a specific start or end time. Students are automatically unenrolled after the number of days has expired in this setting.
 
 _TIP_ This setting can be used as an alternative to a manually unenrolling students or using a clean-up function to remove defunct students at some future time.
-_TIP_ If this course is a metacourse, the enrolment period will not be used.
+_TIP_ If this course is a metacourse, the enrollment period will not be used.
 
-==Enrolment expiry notification==
-These settings determine whether teachers and/or students are notified that their enrolment is about to expire and how much notice they should be given.
+==enrollment expiry notification==
+These settings determine whether teachers and/or students are notified that their enrollment is about to expire and how much notice they should be given.
 
 ==Groups==
 ===Group mode===
@@ -107,35 +107,35 @@ This option allows you to "hide" your course completely. It will not appear on a
 
 _TIP_ The [Course_settings#Course_start_date|Start Date] of the course can also effect course visibility. 
 
-===Enrolment key===
-A course [Enrolment key|enrolment key] enables access to courses to be restricted to those who know the key. This feature is typically used on sites which encourage self enrolments or use an external database process to register students in a course.  The idea is that Teachers or course administrators will supply the key to authorized people using another means like private email, snail mail, on the phone or even verbally in a face-to-face class.
+===enrollment key===
+A course [enrollment key|enrollment key] enables access to courses to be restricted to those who know the key. This feature is typically used on sites which encourage self enrollments or use an external database process to register students in a course.  The idea is that Teachers or course administrators will supply the key to authorized people using another means like private email, snail mail, on the phone or even verbally in a face-to-face class.
 
-When the key is left blank and [Course_settings#Course_enrollable|self enrolment] is allowed, then anyone who has a Moodle username on the site will be able to enrol in the course.
+When the key is left blank and [Course_settings#Course_enrollable|self enrollment] is allowed, then anyone who has a Moodle username on the site will be able to enroll in the course.
 
-_TIP_ A student can be manually enroled in the course and will not have to supply the required key when they enter the course for the first time. 
+_TIP_ A student can be manually enrolled in the course and will not have to supply the required key when they enter the course for the first time. 
 
-_TIP_ If this password "gets out" and you have unwanted people enrolling, you can unenrol them (see their user profile page or unassign them from the [Assign roles|student role] in the course) and change this key. Any legitimate students who have already enrolled will not be affected, but the unwanted people will not be able to get back in.
+_TIP_ If this password "gets out" and you have unwanted people enrolling, you can unenroll them (see their user profile page or unassign them from the [Assign roles|student role] in the course) and change this key. Any legitimate students who have already enrolled will not be affected, but the unwanted people will not be able to get back in.
 
-_TIP_ If you are using a non-interactive enrolment, system (e.g., External Database, LDAP) and you do not want students who fail the initial check to be asked for an enrolment key that they will not have, set _Course Enrolable_ to _No_.
+_TIP_ If you are using a non-interactive enrollment, system (e.g., External Database, LDAP) and you do not want students who fail the initial check to be asked for an enrollment key that they will not have, set _Course enrollable_ to _No_.
 
-_TIP_ You can control who is displayed as providing the Key when someone is requested to supply the key. See [Internal enrolment]
+_TIP_ You can control who is displayed as providing the Key when someone is requested to supply the key. See [Internal enrollment]
 
 ===Guest access===
 
-Allows any authenticated user (i.e. logged in) to access the course (as a [Guest role|guest]), including those who have logged in "as guest". You can choose if they need an enrolment key or may enter without one. 
+Allows any authenticated user (i.e. logged in) to access the course (as a [Guest role|guest]), including those who have logged in "as guest". You can choose if they need an enrollment key or may enter without one. 
 
 People can log in as guests using the "Login as a guest" button on a login screen, where that feature is enabled for the site. When the user tries to enter a course, they will see the [Log in|login screen]. If you only need people authenticated via your normal authentication method to access courses (as Guest or not) it is probably wise to disable "Login as a guest" for a slight improvement in site security. See [Manage authentication].
 
 Guests in a course ALWAYS have "read-only" access - meaning they cannot leave any posts or otherwise mess up the course for real students.  No use information is stored for a guest.
 
 _TIP_ This can be handy when you want to let a colleague in to look around at your work, or to let students see a course before they have decided to enroll.
-_TIP_ You have a choice between two types of guest access: with the enrolment key or without. If you choose to allow guests who have the key, then the guest will need to provide the current enrolment key EVERY TIME they log in (unlike students who only need to do it once). This lets you restrict your guests. If you choose to allow guests without a key, then anyone can get straight into your course.
+_TIP_ You have a choice between two types of guest access: with the enrollment key or without. If you choose to allow guests who have the key, then the guest will need to provide the current enrollment key EVERY TIME they log in (unlike students who only need to do it once). This lets you restrict your guests. If you choose to allow guests without a key, then anyone can get straight into your course.
 
 For more information see [Guest role].
 
 ===Cost===
 
-If [Paypal] or [Authorize.net Payment Gateway] is set as the [Enrolment plugins|enrolment plugin], then the course cost can be set in the cost field.
+If [Paypal] or [Authorize.net Payment Gateway] is set as the [enrollment plugins|enrollment plugin], then the course cost can be set in the cost field.
 
 ==Language==
 If you force a language in a course, the interface of Moodle in this course will be in this particular language, even if a student has selected a different preferred language in his/her personal profile.
