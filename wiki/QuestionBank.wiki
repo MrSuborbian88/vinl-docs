@@ -34,8 +34,12 @@ The *move* icon allows you to move one question at a time.
 ==Tips and tricks==
 --Put the answer into the question name so you can quickly see the answers when students are asking for answers. This is especially useful if you're dealing with large sets of questions! (No option yet for viewing category or answer of question in the list of questions.)
 
---Export questions in GIFT or Moodle XML formats, then import them into a Lesson. (Future versions of Moodle will make Question bank available to both Lesson and Quiz activities.)
-
 --Remember that while some of the same question types can be found in both the Quiz and Lesson modules, they can be very different.  Scoring and grading each student's choice is more robust in a Quiz.  On the other hand, each Lesson question answer also has a jump associated it.
 
 --Use GIFT or other export modes to print questions and answers in a category.  Hint, clever use of word processor macros, using search and replace, can tidy up a GIFT file for printing.
+
+==Quick Quiz Creator==
+
+The Quick Quiz Creator (QQC) is a simple, easy alternative to the default question bank and quiz creator.  It provides an intuitive interface which allows you to create a quiz without many of the complications of the more advanced interface. and it provides more customizability as well: questions can be dragged-and-dropped into a preferred order, multiple answers can be marked as right or wrong and the QQC will calculate appropriate point values, and so on.  When you submit the questions in the QQC, a quiz is created and placed with the other quizzes, ready to be taken.
+
+When you submit the questions in the QQC, it places each one in the question bank with the tag "QQC_[name of test]_QN_[question number]" to allow you to make any changes desired with the advanced interface.  Once these changes are made (or even if changes are not made), you may create quizzes with these questions as normal, even mixing and matching them with questions from other quizzes.
