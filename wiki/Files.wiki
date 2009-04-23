@@ -1,4 +1,4 @@
-#summary A guide to uploading and downloading media
+#summary All about uploading and downloading media
 
 The *Files* menu is located in a course's administration block|. Depending upon privileges, it is a place to upload files and find VINL created files such as backup(s) of the course.  The files area can contain PDFs, HTML, Multimedia, word processing, presentations or any digital content for inclusion in an activity, resource, course section, link, or a direct download.  
 
