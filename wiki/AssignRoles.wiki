@@ -1,3 +1,5 @@
+#summary Roles and how to give them to people
+
 ==Locations for assigning roles==
 
 Assigning roles is done for/in a particular context, such as "site" and "course."  While the process is similar for each context, the approach to role assignment may be different.   Here are several contexts and ways to find the Assign Roles page.
