@@ -1,10 +1,8 @@
-=== Student Tutorials ===
+* Student Tutorials
   * [StudentTutorialIntroduction Student Introduction]
   * [StudentTutorialJoinLeaveAClass Joining and Leaving a Class]
-
-=== Teacher Pages ===
+* Teacher Pages
   * [QuestionBank Question Bank]
-
-=== Administration ===
+* Administration
   * [Backup Backup]
   * [Restore Restore]
