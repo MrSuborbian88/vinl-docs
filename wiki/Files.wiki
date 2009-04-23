@@ -1,3 +1,5 @@
+#summary A guide to uploading and downloading media
+
 The *Files* menu is located in a course's administration block|. Depending upon privileges, it is a place to upload files and find VINL created files such as backup(s) of the course.  The files area can contain PDFs, HTML, Multimedia, word processing, presentations or any digital content for inclusion in an activity, resource, course section, link, or a direct download.  
 
 The files link shows a list of files and folders, depending upon the viewer's role. The list will contain the name, size, last time modified and potential action(s) to modify that item.
