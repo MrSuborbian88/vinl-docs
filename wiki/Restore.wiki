@@ -1,4 +1,4 @@
-*Restore* allows you to reinstate a backup of a course to the present course.  Course backups are usually stored in the '''backupdata''' folder within the course files folder. There is a restore link next to every course backup.  
+*Restore* allows you to reinstate a backup of a course to the present course.  Course backups are usually stored in the 'backupdata' folder within the course files folder. There is a restore link next to every course backup.  
 
 The backup and restore process is a common way of moving or, copying specific courses from one Moodle to another.
 
