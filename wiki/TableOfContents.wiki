@@ -6,5 +6,3 @@
 * [QuestionBank Question Bank]
 
 == Administration ==
-* 
-* 
