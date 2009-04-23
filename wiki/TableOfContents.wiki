@@ -1,8 +1,8 @@
-* Student Tutorials
-  * [StudentTutorialIntroduction Student Introduction]
-  * [StudentTutorialJoinLeaveAClass Joining and Leaving a Class]
-* Teacher Pages
-  * [QuestionBank Question Bank]
-* Administration
-  * [Backup Backup]
-  * [Restore Restore]
+  * Student Tutorials
+    * [StudentTutorialIntroduction Student Introduction]
+    * [StudentTutorialJoinLeaveAClass Joining and Leaving a Class]
+  * Teacher Pages
+    * [QuestionBank Question Bank]
+  * Administration
+    * [Backup Backup]
+    * [Restore Restore]
