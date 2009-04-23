@@ -1,3 +1,5 @@
+#summary How to prevent catastrophic data loss
+
 *Backups* allow Teachers or Administrators to save the current state of a course (which includes user data, course files, etc.).
 
 Generally, you will not have to worry about '''course backups''', as the primary VINL administrator will have set a schedule of site wide backups. However, as a teacher with editing privileges, it is good practice to download a recent backup to your own computer for additional protection.
