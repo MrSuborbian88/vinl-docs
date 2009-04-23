@@ -1,3 +1,5 @@
+#summary Making courses do what you want
+
 *Course settings* control how the things appear to the participants in a course. It is the first page viewed after creating a course. It can be edited through the *Settings* link in the Course administration block menu.  This page has links to other pages that may describe a setting in more detail. Different versions of Moodle may not have all the settings listed below.
 
 ==General==
