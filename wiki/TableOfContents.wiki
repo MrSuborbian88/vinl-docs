@@ -1,3 +1,4 @@
+#summary A guide to documentation pages on this wiki
 
   * Student Tutorials
     * [StudentTutorialIntroduction Student Introduction]
