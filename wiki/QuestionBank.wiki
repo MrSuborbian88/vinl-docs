@@ -1,3 +1,5 @@
+#summary A guide to the advanced quiz creation process as well as the Quick Quiz Creator
+
 This feature allows a teacher to create, preview, and edit questions in a course question bank, a database of questions. These questions can then be used in Quizzes and through the export process in a lesson activity. The teacher enters the question bank by creating or editing a quiz activity or through the Administration block.
 
 The initial Question Bank page has tabs that allow you (as teacher) to edit questions and categories, import questions and export questions.
