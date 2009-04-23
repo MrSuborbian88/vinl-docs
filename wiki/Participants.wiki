@@ -1,3 +1,5 @@
+#summary Who's in a course and what they do
+
 *Participants* are the Teachers and Students who are part of a course.  The list of participants can be seen by following the Participant link in the People block.
 
 
