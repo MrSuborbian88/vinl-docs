@@ -1,1 +1,3 @@
+#summary Big brother is watching you
+
 *Live Logs* show all activity that has occurred in the previous hour. For a teacher this is limited to a course, for an administrator this covers the entire site.  This report is integrated with active links to the user and action. 
