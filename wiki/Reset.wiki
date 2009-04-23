@@ -1,3 +1,5 @@
+#summary A guide to (and warnings about) the reset option
+
 *Reset* allows you to empty a course of user data, while retaining the activities and other settings. Keep in mind when choosing items you will delete, your chosen user data from this course *forever*!
 
 You can delete the following in any combination:
