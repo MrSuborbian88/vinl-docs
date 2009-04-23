@@ -1,3 +1,5 @@
+#summary A description of user profiles and publicly-available user information
+
 The user *profile* page gathers together all the known information about a particular user.
 
 If you are a teacher, or looking at your own profile, then you will see some extra tabs allowing you to edit the profile settings, or providing detailed report and logs about the activity of that user.
