@@ -1,3 +1,5 @@
+#summary How to import data from one course into another
+
 *Import* allows you to apply to the current course data from any other course for which the teacher has editing rights. This will allow teachers to re-use instead of re-creating one or more activities and resources.
 
 This feature will not import student or teacher data, such as forum posts and discussions. It will only import the structure of such activities.
