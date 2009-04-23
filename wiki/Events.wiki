@@ -1,3 +1,5 @@
+#summary Events and scheduling
+
 *Events* are any sort of happening with a description that are can be added to the calendar.  Events consist of:
   * Name
   * Description
