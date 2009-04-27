@@ -1,4 +1,4 @@
-#How to submit Assignments
+#summary How to submit Assignments
 
 = Student Tutorial =
 
