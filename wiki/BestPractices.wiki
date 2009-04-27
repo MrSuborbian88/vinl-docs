@@ -2,7 +2,7 @@
 
 ==Best Practice Evidence==
 
-  # *Project website/wiki:* We have a wiki on GoogleCode. (http://code.google.com/p/vinyl/)
+  # *Project website/wiki:* We have a wiki on [http://code.google.com/p/vinyl/ GoogleCode]
   # *Project management website:* Also on GoogleCode (see link above).
   # *Code repository:* Still on GoogleCode (see link above).
   # *Documented Coding Standards:* We tried to adhere to Moodle's coding standards (reproduced here: http://code.google.com/p/vinl-docs/wiki/CodingStandards) as closely as possible.
