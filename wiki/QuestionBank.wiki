@@ -127,3 +127,29 @@ grade: 100%
 answer4: `*`
 feedback: ouch! that was wrong
 grade: none
+
+==Numerical questions==
+
+From the student perspective, a numerical question looks just like a short-answer question. The difference is that numerical answers are allowed to have an accepted error. This allows a continuous range of answers to be set. 
+
+For example, if the answer is 30 with an accepted error of 5, then any number between 25 and 35 will be accepted as correct.
+
+Numerical questions can also have case-insensitive non-numerical answers. This is useful whenever the answer for a numerical question is something like N/A, +inf, -inf, NaN etc.
+
+Questions may have different answers with different levels of accuracy. That lets you create questions like "What is a root of x^2 - 3x + 2?" and award different levels of credit depending on the accuracy of the answer.
+
+==Question set-up==
+
+  # Select the question category
+  # Give the question a descriptive name - this allows you to identify it in the question bank.
+  # Enter a question in the 'question text' field. This can include an equation.
+  # Now enter the first accepted answer(s). Note: Floating point numbers, e.g. 23.4, may also be written as 23,4 or 2.34E+1.
+  # Enter an accepted error for this answer. This is the range above or below the answer that VINL will accept as a match. For example, if the correct answer is 5, but you will accept 4 or 6 as answers, your accepted error is 1.
+  # Enter a grade for this answer.
+  # Repeat for each of the answers you want to accept.
+  # Units can also be specified. For example, if you enter a unit of 'cm' here, and the accepted answer is 15, then the answers '15cm' and '15' are both accepted as correct. You can also specify a multiplier. So, if your main answer was 5500 with unit W, you can also add the unit kW with a multiplier of 0.001. This means that the answers '5500', '5500W' or '5.5kW' would all be marked correct. Note that the accepted error is also multiplied, so an allowed error of 100W would become an error of 0.1kW.
+  # Click 'Save changes' to add the question to the category.
+
+=== Penalty factor ===
+
+The 'penalty factor' only applies when the question is used in a quiz using adaptive mode - i.e. where the student is allowed multiple attempts at a question even within the same attempt at the quiz. If the penalty factor is more than 0, then the student will lose that proportion of the *maximum* grade upon each successive attempt. For example, if the default question grade is 10, and the penalty factor is 0.2, then each successive attempt after the first one will incur a penalty of 0.2 x 10 = 2 points.
