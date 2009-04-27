@@ -1,0 +1,294 @@
+#summary Moodle Guidelines
+
+Reprinted below are the Moodle coding guidelines, to which we attempted to adhere as closely as possible (with the exception of "use spaces instead of tabs," because that's just _wrong_):
+
+= Moodle Philosophy =
+
+Any collaborative project needs consistency and stability to stay strong.
+
+These *coding guidelines* are to provide a goal for all Moodle code to strive to. It's true that some of the older existing code falls short in a few areas, but it will all be fixed eventually. All new code definitely must adhere to these standards as closely as possible.
+
+= General rules =
+
+
+# All *code* files should use the *.php* extension.
+
+# All *template* files should use the *.html* extension.
+
+# All text files should use *Unix-style text format* (most text editors have this as an option).
+
+# All php tags must be 'full' tags like *<?php ?>* ... not 'short' tags like <? ?>.
+
+# All existing *copyright notices must be retained*. You can add your own if necessary.
+
+# Each file should *include (requireonce) the main config.php* file.
+
+# Any *other include/require should use an absolute path* beginning with $CFG->dirroot or  $CFG->libdir, not relative includes, which sometimes behave strangely under PHP.
+
+# Includes should be done at the top of files or inside functions/methods, do not include/require in the middle of file in global scope
+
+# Each file should *check that the user is authenticated correctly*, using requirelogin() and hascapability() or requirecapability().
+
+# All *access to databases should use the functions in _lib/dmllib.php*_ whenever possible - this allows compatibility across a wide range of databases. You should find that almost anything is possible using these functions. If you must write SQL code then make sure it is: cross-platform; restricted to specific functions within your code (usually a lib.php file); and clearly marked.
+
+# *Don't create new global variables*. Use only the Moodle-standard $CFG, $SESSION, $THEME, $SITE, $COURSE and $USER global variables.
+
+# *All variables should be initialised* or at least tested for existence using isset() or empty() before they are used.
+
+# *All strings should be translatable* - create new texts in the "lang/enutf8" files with concise English lowercase names and retrieve them from your code using getstring() or printstring(). Never delete strings to ensure backwards compatibility of the language packs is maintained.
+
+# *Don't use p() and s() functions* to print language strings. Those functions are not designed to print html with tags. Use echo() instead.
+
+# All *errors should be printed using printerror()* to maximise translation and help for users (it automatically links to the docs wiki).
+
+# All *help files should be translatable* - create new texts in the "lang/enutf8/help" directory and call them using helpbutton(). If you need to update a help file:
+#* with a minor change, where an old translation of the file would still make sense, then it's OK to make the change but you should notify translation AT moodle DOT org.
+#* for a major change you should create a new file by adding an incrementing number (eg filename2.html) so that translators can easily see it's a new version of the file. Obviously the new code and the help index files should also be modified to point to the newest versions.
+
+# Incoming data from the browser (sent via *GET or POST) automatically has magicquotes applied* (regardless of the PHP settings) so that you can safely insert it straight into the database. *All other raw data (from files, or from databases) must be escaped with addslashes()* before inserting it into the database. Because this is so often done incorrectly, there is more explanation on this issue of adding and stripping slashes on a separate page.
+
+# VERY IMPORTANT: Within Moodle, *All texts should be printed using the formattext() function*, especially those that have come from users. This ensures that text is filtered and cleaned correctly. More information can be found on the page about output functions.
+
+# User actions should be logged using the addtolog() function. These logs are used for activity reports and Logs.
+
+# *Always create HTML links relative to the full site root*, i.e. link to  _$CFG->wwwroot/mod/blonk/view.php?id=99_ rather than just _view.php?id=99_. This means that your code will work if called by a script in another folder, among other things.
+
+# Modules should *store config variables using _setconfig('varname', $value, 'mod/modulename')*_ where the last parameter is the path to the module directory.
+
+# *Respect decimal separators specified* in language pack - do not use numberformat() directly, instead use formatfloat() and unformatfloat() when displaying or processing floating point numbers (mandatory in 2.0)
+
+= Coding style =
+
+I know it can be a little annoying to change your style if you're used to something else, but balance that annoyance against the annoyance of all the people trying later on to make sense of Moodle code with mixed styles. There are obviously many good points for and against any style that people use, but the current style just is, so please stick to it.
+
+*Indentation
+Indenting should be consistently *4 spaces*. Don't use tabs AT ALL. Do not indent the main script level.
+
+GOOD:
+<code>
+<?php // $Id$
+$a = requiredparam('a', PARAMINT);
+dosomethingwith($a);
+?>
+</code>
+
+BAD:
+<code>
+<?php // $Id$
+    $a = requiredparam('a', PARAMINT);
+    dosomethingwith($a);
+?>
+</code>
+
+*Variable names*
+Variable names should always be easy-to-read, *meaningful lowercase English* words. If you really need more than one word then run them together, but keep them short as possible. Use plural names for arrays of objects.
+
+  GOOD: $quiz
+  GOOD: $errorstring
+  GOOD: $assignments (for an array of objects)
+  GOOD: $i (but only in little loops)
+
+  BAD: $Quiz
+  BAD: $aReallyLongVariableNameWithoutAGoodReason
+  BAD: $errorstring
+
+*Constants*
+Constants should always be in *upper case*, and always start with the name of the module. They should have words separated by underscores.
+
+<code>
+define('FORUMMODEFLATOLDEST', 1);
+</code>
+
+This might also be applied to PHP's build in constants TRUE, FALSE, and NULL.
+
+*Function names*
+Function names should be *simple English lowercase words*, and start with the name of the module to avoid conflicts between modules. Words should be separated by underscores. Parameters should always have sensible defaults if possible. Note there is no space between the function name and the following (brackets).
+
+<code>
+function forumsetdisplaymode($mode=0) {
+    global $USER, $CFG;
+          
+        if ($mode) {
+            $USER->mode = $mode;
+        } else if (empty($USER->mode)) {
+            $USER->mode = $CFG->forumdisplaymode;
+        }
+}
+</code>
+
+The same applies to naming *classes* and their *methods*. Use lowercase words separated by underscores.
+
+<code>
+class somecustomclass {
+    function classmethod() {
+          ...
+    }
+}
+</code>
+
+Note there are some exceptions in the code using *CamelCase*: class SomeCustomClass {function classMethod(){...}}, but these are usually there because of compatibility with thirds party libraries (e.g. formslib).
+
+*Blocks*
+Blocks must always be enclosed in *curly braces* (even if there is only one line). Moodle uses this style:
+
+<code>
+if ($quiz->attempts) {
+    if ($numattempts > $quiz->attempts) {
+         error($strtoomanyattempts, "view.php?id=$cm->id");
+    }
+}
+</code>
+
+
+*Strings*
+Strings should be defined using *single quotes* where possible, so that less memory is used.
+
+<code>
+$var = 'some text without any variables';
+$var = 'with special characters like a new line '."\n";
+$var = 'a very, very long string with a '.$single.' variable in it';
+$var = "some $text with $many variables $within it";
+</code>
+
+*Comments*
+Comments should be added as much as is practical, to explain the code flow and the purpose of functions and variables.
+
+* Every function (and class) should use the popular phpDoc format. This allows code documentation to be generated automatically.
+* Inline comments should use the // style, laid out neatly so that it fits among the code and lines up with it.
+
+<code>
+/**
+ * The description should be first, with asterisks laid out exactly
+ * like this example. If you want to refer to a another function,
+ * do it like this: {@link cleanparam()}. Then, add descriptions
+ * for each parameter as follows.
+ *
+ * @param int $postid The PHP type is followed by the variable name
+ * @param array $scale The PHP type is followed by the variable name
+ * @param array $ratings The PHP type is followed by the variable name
+ * @return mixed
+*/
+function forumgetratingsmean($postid, $scale, $ratings=NULL) {
+     if (!$ratings) {
+         $ratings = array();     // Initialize the empty array
+         if ($rates = getrecords("forumratings", "post", $postid)) {
+             // Process each rating in turn
+             foreach ($rates as $rate) {
+      ... etc.
+</code>
+
+*Use space*
+Space should be used liberally - don't be afraid to spread things out a little to gain some clarity. Generally, there should be one space between brackets and normal statements, but no space between brackets and variables or functions:
+
+<code>
+foreach ($objects as $key => $thing) {
+    process($thing);
+}
+      
+      if ($x =  $y) {
+          $a = $b;
+      } else if ($x =  $z) {
+          $a = $c;
+      } else {
+          $a = $d;
+      }
+</code>
+
+*Copying objects*
+When making a COPY of an object, always use the PHP5 *clone()* function (otherwise you may end up with just a reference to the first object).  Moodle will make sure this works consistently on PHP4 too.
+
+     BAD:   $b = $a;
+     GOOD:  $b = clone($a);
+
+If the thing you want to copy is not an object, but may contain objects (e.g. an array of objects) then use *fullclone()* instead.
+
+= Database structures =
+
+To help you create tables that meet these guidelines, we recommend you use the built in database definition (XMLDB) editor.
+
+
+# Every table must have an auto-incrementing id field (INT10) as primary index. (see IdColumnReasons)
+
+# The main table containing instances of each module must have the same name as the module (eg widget) and contain the following minimum fields:
+#* id - as described above
+#* course - the id of the course that each instance belongs to
+#* name - the full name of each instance of the module
+
+# Other tables associated with a module that contain information about 'things' should be named widgetthings (note the plural).
+
+# Table and column names should avoid using reserved words in any database. Please check them before creation. Table names may be up to 28 characters long, and Column names up to 30 characters.
+
+# Column names should be always lowercase, simple and short, following the same rules as for variable names.
+
+# Where possible, columns that contain a reference to the id field of another table (eg widget) should be called widgetid. (Note that this convention is newish and not followed in some older tables)
+
+# Boolean fields should be implemented as small integer fields (eg INT4) containing 0 or 1, to allow for later expansion of values if necessary.
+
+# Most tables should have a timemodified field (INT10) which is updated with a current timestamp obtained with the PHP time() function.
+
+# Always define a default value for each field (and make it sensible)
+
+# Each table name should start with the database prefix ($CFG->prefix). In a lot of cases, this is taken care of for you automatically. Also, under Postgres, the name of every index must start with the prefix too.
+
+# In order to guarantee cross-database compatibility, follow these simple rules about the use of the *AS* keyword (only if you need table/colum aliases, of course):
+#* *Don't use* the *AS* keyword for *table aliases*.
+#* *Do use* the *AS* keyword for *column aliases*.
+
+# *Never* create UNIQUE KEYs (constraints) at all. Instead use UNIQUE INDEXes. In the future, if we decide to add referential integrity to Moodle and we need UNIQUE KEYs they will be used, but not now. Please note that the XMLDB editor allows you to specify both XMLDB-only UNIQUE and FOREIGN constraints (and that's good, in order to have the XML well defined) but only underlying INDEXes will be generated. 
+
+# Those XMLDB-only UNIQUE KEYs (read previous point) only must be defined if such field/fields *are going to be the target* for some (XMLDB-only too) FOREIGN KEY. Else, create them as simple UNIQUE INDEXes.
+
+# Tables associated *with one block* must follow this convention with their names: *$CFG->prefix + "block" + nameoftheblock + anythingelse*. For example, assuming that $CFG->prefix is 'mdl', all the tables for the block "rssclient" must start by 'mdlblockrssclient' (being possible to add more words at the end, i.e. 'mdlblockrssclientanothertable'...). This rule will be 100% enforced with Moodle 2.0, giving time to developers until then.
+
+# *Never* make database changes in the STABLE branches.  If we did, then users upgrading from one stable version to the next would have duplicate changes occurring, which may cause serious errors.
+
+# When refering to integer variable in SQL queries, do not surround the value in quotes. For example, getrecordsselect('question', "category=$catid") is right. getrecordsselect('question', "category='$catid'") is wrong. It hides bugs where $catid is undefined. (This thread explains.)
+
+= Security issues (and handling form and URL data)= 
+
+
+# Do not rely on 'registerglobals'. Every variable must be properly initialised in every code file. It must be obvious where the variable came from.
+
+# Initialise all arrays and objects, even if empty. $a = array() or $obj = new stdClass();.
+
+# Do not use the optionalvariable() function (this function is now deprecated). Use the optionalparam() function instead. Pick the correct PARAMXXXX value for the data type you expect.
+
+# Do not use the requirevariable() function (this function is now deprecated). Use the requiredparam() function instead. Pick the correct PARAMXXXX value for the data type you expect.
+
+# Use datasubmitted(), with care. Data must still be cleaned before use. Use confirmsesskey() together with datadubmitted() in order to prevent CSRF attacks.
+
+# Do not use $GET, $POST or $REQUEST. Use the appropriate requiredparam() or optionalparam() appropriate to your need.
+
+# Do not check for an action using something like if (isset($GET['something'])). Use, e.g., $something = optionalparam( 'something',-1,PARAMINT ) and then perform proper test for it being in its expected range of values e.g., if ($something>=0) {....
+
+# Wherever possible group all your requiredparam(), optionalparam() and other variables initialisation at the beginning of each file to make them easy to find.
+
+# Use 'sesskey' mechanism to protect form handling routines from attack. Basic example of use: when form is generated, include <input type="hidden" name="sesskey" value="<?php echo sesskey(); ?>" />. When you process the form check with if (!confirmsesskey()) { printerror('confirmsesskeybad');}.
+
+# All filenames must be 'cleaned' using the cleanfilename() function, if this has not been done already by appropriate use of requiredparam() or optionalparam()
+
+# Any data read from the database must have addslashes() applied to it before it can be written back. A whole object of data can be hit at once with addslashesobject(). For Moodle 2.0 the database layer has changed and you MUST NOT use addslashes() as this is now automated. 
+
+# addslashesjs() must be used for escaping of javascript strings
+
+# Wherever possible, data to be stored in the database must come from POST data (from a form with method="POST") as opposed to GET data (ie, data from the URL line).
+
+# Do not use data from $SERVER if you can avoid it. This has portability issues.
+
+# If it hasn't been done somewhere else, make sure all data written to the database has been through the cleanparam() function using the appropriate PARAMXXXX for the datatype.
+
+# If you write custom SQL code, make very sure it is correct. In particular watch out for missing quotes around values. Possible SQL 'injection' exploit.
+
+# Check all data (particularly that written to the database) in every file it is used. Do not expect or rely on it being done somewhere else.
+
+# Blocks of code to be included should contain a definite PHP structure (e.g, a class declaration, function definition(s) etc.) - straight blocks of code promote uninitialised variable usage.
+
+# If you need to use shellexec() (or any other shell invoking function), make sure you clean parameters first with escapeshellcmd()/escapeshellarg (otherwise, we open up for shell injection attacks).
+
+=  Use of JavaScript within Moodle = 
+
+See JavaScript guidelines.
+
+=  See also = 
+* General PHP coding standards
+* PEAR coding standards
