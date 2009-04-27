@@ -15,7 +15,7 @@ It is possible to move, delete  completely or zip archive one or more items. Fir
 The "Make a folder" button is at the bottom of the list.  The initial file structure for a course is simple.  Modules within VINL may create their own folder.  Generally speaking,a teacher can make one or more folders any place in the "files"  area.   These folders can be seen when adding an image or resource from within the course.
 
 ===Upload a file===
-On the bottom of every files screen is a "Upload a file" button.  This will allow a single file upload.   Uploading a file with the same name as an existing file it will automatically overwrite the existing file without a warning.
+On the bottom of every files screen is a "Upload files" button.  This will allow you to upload a file.  It is possible to upload more than 1 file at once by clicking the "More File Slots" button.  Files must be selected one by one.  Uploading a file with the same name as an existing file it will automatically overwrite the existing file without a warning.
 
   * By first zipping a group of files or a folder of files, you can upload that file and VINL will recognize this and give you an unzip action link.  The unzip action will create the files and or folders in that place in the administrative files section.
 
