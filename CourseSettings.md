@@ -1,0 +1,156 @@
+**Course settings** control how the things appear to the participants in a course. It is the first page viewed after creating a course. It can be edited through the **Settings** link in the Course administration block menu.  This page has links to other pages that may describe a setting in more detail. Different versions of Moodle may not have all the settings listed below.
+
+## General ##
+### Short name ###
+Many institutions have a shorthand way of referring to a course, such as BP102 or COMMS.  Even if you do not already have such a name for your course, make one up here.  It will be used in several places where the long name is not appropriate.  The most common use is in the navigation bar that is at the top of most pages and this provides an active link to the course home page.
+
+The above example has the short course name, "Features".  The short name also appears in the subject line of email messages that are part of the course.
+
+_TIP_ If the short name field is not editable, the site administrator has disabled that user's ability by unassigning the moodle/course:changeshortname capability.
+
+### ID number ###
+The ID number is an alphanumeric field.  It has several potential uses.  Generally, it is not displayed to students.  However, it can be used to match this course against an external system's ID, as your course catalog ID or can be used in the certificate module as a printed field.
+
+_TIP_ If the ID number field is not editable, the site administrator has disabled that user's ability by unassigning the moodle/course:changeidnumber capability.
+
+### Format ###
+See Course formats
+
+### Number of weeks/topics ###
+This setting is only used by the 'weekly' and 'topics' course formats.  In the 'weekly' format, it specifies the number of weeks that the course will run for, starting from the course starting date.  In the 'topics' format, it specifies the number of topics in the course.  Both of these translate to the number of "boxes" down the middle of the course page.
+
+### Course start date ###
+This is where you specify the starting time of the course (in your own time zone). The first week will start on the date you set here when you use the "Weekly" course format.
+
+This setting will not affect courses using the 'social' or 'topics' formats.
+
+However, this setting will have an effect on the display of logs, which use this date as the earliest possible date you can display. It can also make your course not visible to students even if when the course is available to students (see below).
+
+_TIP_ If your institution runs on a weekly schedule, you may want to consider setting the start date for courses on the first day of the week, like a Monday.
+
+_TIP_ In general, if your course does not have a real starting date then set the date to yesterday and use the availability setting to reveal the course to students.
+
+### Hidden sections ###
+This option allows you to decide how the hidden sections in your course are displayed to students.  By default, a small area is shown (in collapsed form, usually gray) to indicate where the hidden section is, though they still cannot actually see the hidden activities and texts.  This is particularly useful in the Weekly format, so that non-class weeks are clear, or if you have quizes you don't want your students to see.
+
+_TIP_ If you choose, these non-available items can be completely hidden, so that students do not even know  that sections or an activity in the course are hidden.
+
+### Show grades ###
+Many of the activities allow grades to be set.  By default, the results of all grades within the course can be seen in the Grades page, available from the main course page for students and teachers.
+
+_TIP_ If a teacher is not interested in using grades in a course, or just wants to hide grades from students, then they can disable the display of grades with this option.  This does not prevent the teacher using or setting grades for an individual activities, it just disables the results from being displayed to students.
+
+### Show activity reports ###
+Activity reports are available to each student. These reports or logs shows their activity and contributions in the current course.  These reports include their detailed access log.
+
+Student access to their own reports is controlled by the teacher via this course setting.  For some courses, these reports can be a useful tool for a student to reflect on their involvement and appearance within the online environment, but for some courses, this may not be necessary.
+
+Teachers always have access to these reports.  Teachers can use the button or tab visible on each person’s profile page or use the Reports link in the course administration block.
+
+Your site administrator may ask you to turn this feature off.  Showing activity reports can place a load on the server, slowing it down at times.  For large or long classes it may be more efficient to keep it off.
+
+### Maximum upload size ###
+This setting defines the largest size of file that can be uploaded by students in this course.  The site administrator can determine site policies for the teacher to select.  Teachers should be aware of a course's file structure.
+
+It is possible to further restrict this size through settings within each activity module.
+
+### Force ###
+If the site administrator has allowed the teacher to set a course theme, this pull down menu will appear with a list of themes on the site.
+
+### Is this a meta course? ###
+A metacourse automatically enrolls its participants from other courses.  For example, for every course that is a "child" of the metacourse, all students in the child course are enrolled in the metacourse.
+
+## enrollments ##
+### enrollment plugins ###
+This setting allows you to choose an interactive enrollment plugin, such as internal enrollment or Paypal. If you use a non-interactive enrollment plugin, this setting has no effect.
+
+### Default role ###
+
+From Moodle 1.7 onwards, a default course role, such as student, may be set.
+
+### Course enrollable ###
+This setting only affects interactive enrollment plugins, such as internal enrollment and Paypal. It has no affect at all on non-interactive plugins (e.g. External Database, LDAP). Setting it to "no" or if it is outside the specified date range will result in the student being told the course is "Not enrollable" and being returned to the front page, if they are attempting to enroll using an interactive plugin.
+
+_TIP_ If you are using Internal enrollment and you have not set an enrollment key, you should seriously consider setting this to _No_ otherwise any user can enroll on your course.
+
+### enrollment duration ###
+This setting specifies the number of days a student can be enrolled in this course (starting from the moment they enroll).  Set this value with care - setting it when not required is a common origin of the complaint,  "my students keep disappearing after n days".
+
+_TIP_ This is useful for rolling courses without a specific start or end time. Students are automatically unenrolled after the number of days has expired in this setting.
+
+_TIP_ This setting can be used as an alternative to a manually unenrolling students or using a clean-up function to remove defunct students at some future time.
+_TIP_ If this course is a metacourse, the enrollment period will not be used.
+
+## enrollment expiry notification ##
+These settings determine whether teachers and/or students are notified that their enrollment is about to expire and how much notice they should be given.
+
+## Groups ##
+### Group mode ###
+Here you can define the group mode at the course level by a pull down menu. "No groups", "Separate groups" and "Visible groups" are the choices. The selected setting will be the default group mode for all activities defined within that course.  The group setting can affect what users see in the Participants list.
+
+_TIP_ You may leave it set to "No groups" and still have specific activities use groups. In this case the force setting below should be set to "no". For example, the teacher can use a group setting to completely separate cohorts of students such that each group is unaware of the other in the course.
+
+### Force ###
+If the group mode is "forced" at a course-level, then this particular group mode will be applied to every activity in that course. This will override any activities that may have a special group setting.
+
+_TIP\_The force setting is useful when the teacher wants to set up a course and not have to change each activities group settings._
+
+
+### Default grouping ###
+
+If groupings are enabled (in Moodle 1.9 onwards), a default grouping for course activities and resources may be set.
+
+## Availability ##
+
+This option allows you to "hide" your course completely. It will not appear on any course listings, except to teachers of the course and administrators. Even if students try to access the course URL directly, they will not be allowed to enter.
+
+_TIP_ The Start Date of the course can also effect course visibility.
+
+### enrollment key ###
+A course enrollment key enables access to courses to be restricted to those who know the key. This feature is typically used on sites which encourage self enrollments or use an external database process to register students in a course.  The idea is that Teachers or course administrators will supply the key to authorized people using another means like private email, snail mail, on the phone or even verbally in a face-to-face class.
+
+When the key is left blank and self enrollment is allowed, then anyone who has a Moodle username on the site will be able to enroll in the course.
+
+_TIP_ A student can be manually enrolled in the course and will not have to supply the required key when they enter the course for the first time.
+
+_TIP_ If this password "gets out" and you have unwanted people enrolling, you can unenroll them (see their user profile page or unassign them from the student role in the course) and change this key. Any legitimate students who have already enrolled will not be affected, but the unwanted people will not be able to get back in.
+
+_TIP_ If you are using a non-interactive enrollment, system (e.g., External Database, LDAP) and you do not want students who fail the initial check to be asked for an enrollment key that they will not have, set _Course enrollable_ to _No_.
+
+_TIP_ You can control who is displayed as providing the Key when someone is requested to supply the key. See Internal enrollment
+
+### Guest access ###
+
+Allows any authenticated user (i.e. logged in) to access the course (as a guest), including those who have logged in "as guest". You can choose if they need an enrollment key or may enter without one.
+
+People can log in as guests using the "Login as a guest" button on a login screen, where that feature is enabled for the site. When the user tries to enter a course, they will see the login screen. If you only need people authenticated via your normal authentication method to access courses (as Guest or not) it is probably wise to disable "Login as a guest" for a slight improvement in site security. See Manage authentication.
+
+Guests in a course ALWAYS have "read-only" access - meaning they cannot leave any posts or otherwise mess up the course for real students.  No use information is stored for a guest.
+
+_TIP_ This can be handy when you want to let a colleague in to look around at your work, or to let students see a course before they have decided to enroll.
+_TIP_ You have a choice between two types of guest access: with the enrollment key or without. If you choose to allow guests who have the key, then the guest will need to provide the current enrollment key EVERY TIME they log in (unlike students who only need to do it once). This lets you restrict your guests. If you choose to allow guests without a key, then anyone can get straight into your course.
+
+For more information see Guest role.
+
+### Cost ###
+
+If Paypal or Authorize.net Payment Gateway is set as the enrollment plugin, then the course cost can be set in the cost field.
+
+## Language ##
+If you force a language in a course, the interface of Moodle in this course will be in this particular language, even if a student has selected a different preferred language in his/her personal profile.
+
+## Role renaming ##
+In Moodle 1.9 onwards, you can rename the roles used in your course. For example, you may wish to rename the Teacher role as "Facilitator", "Tutor" or "Guide". These new role names will appear within the course. For example on the participants and the override permissions pages.
+
+Please note that the site administrator or a course manager may have changed the names or added new roles.  These names will appear and the teacher may rename them.
+
+The Roles FAQ contains information on changing the name for teacher in Moodle 1.7 and 1.8. Prior to Moodle 1.7, the words for teacher and student may be changed in the course settings.
+
+_Tip_: Do not worry about changing every role name. Only change the site roles which are  used in your course. For example, you may want to ignore renaming roles such as the Administrator role or the Authenticated user role.
+
+_Tip_: To include new role names in a course backup, users should be included in the backup.
+
+
+## Default course settings ##
+
+An administrator can set course settings defaults in _Administration > Courses > Course default settings_ in Moodle 1.9.5 onwards.

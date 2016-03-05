@@ -1,0 +1,14 @@
+# Student Tutorial #
+
+Joining and Leaving a Class
+
+
+# Join/Leave #
+
+After logging into VINL, the home page will be displayed.  All of the courses currently in the VINL system will be listed on this page.  In order to enroll in a class, it must be listed here and, if necessary, you must know the password for the class.
+
+Joining a class is simple.  Click on the name of the class and you will be brought to the class’ homepage if it does not require a password.  If the class requires a password, you will be brought to a page with a text box for the password.  After entering in the correct password, the class’ home page will be displayed.
+
+In order to enroll in the class, you must click on the “Enroll me in this course” link underneath the Administration tab.  You will then be brought to a confirmation page.  If you really wish to become a member of this course, simply click Yes and you will be returned to the home page, now as an enrolled student.
+
+Leaving a class requires more effort than joining it.  In order to leave a class you must contact your teacher or admin and ask them to remove you from the course.  This is due to the chance that students would continuously join and leave classes, if given the option.  This would create a lot of chaos for the teachers and for the VINL system.

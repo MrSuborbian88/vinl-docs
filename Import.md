@@ -1,0 +1,16 @@
+**Import** allows you to apply to the current course data from any other course for which the teacher has editing rights. This will allow teachers to re-use instead of re-creating one or more activities and resources.
+
+This feature will not import student or teacher data, such as forum posts and discussions. It will only import the structure of such activities.
+
+## How to use import course data ##
+
+  1. Select the Import option from the [[administration block](Course.md)] (see below).
+  1. Next, select the course you wish to import from and click the ''Use this course'' button.
+  1. You will be presented with a check box list from which you can select the type of activities or resources you wish to import (see below).
+  1. Finally, click ''Continue'' when done to import that data.
+
+## Tips ##
+
+  * You can import individual items within a module type.
+
+  * Backups, offer other creative ways to bring in course material along with an option for student data.

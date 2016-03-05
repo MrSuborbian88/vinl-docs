@@ -1,0 +1,153 @@
+This feature allows a teacher to create, preview, and edit questions in a course question bank, a database of questions. These questions can then be used in Quizzes and through the export process in a lesson activity. The teacher enters the question bank by creating or editing a quiz activity or through the Administration block.
+
+The initial Question Bank page has tabs that allow you (as teacher) to edit questions and categories, import questions and export questions.
+
+# Question Bank #
+
+## Select a category ##
+Questions are organised into categories. Initially each course has only one category called "Default". It is good practice to create more categories to organize your questions. This not only makes it easier to find questions, but makes the use of random questions and matching question easier. You can create a hierarchy of categories because you can create subcategories inside parent categories. To add or edit categories click on the "Categories" tab.
+
+The question editing screen shows the questions from the currently selected category. You choose this category from the **Category:** drop-down menu. Using the tick box below that menu you determine whether to also show the questions from all subcategories.
+
+### Categories are shared in contexts ###
+
+There are separate question category trees in each different 'context' in which questions are shared. The contexts available to you depend on whether you access the question bank from an activity or from a course and depend on the permissions assigned you for access to questions. See Question contexts for more information on these contexts.
+
+==Add a new question==  # Click the _Questions_ tab to access the Question Bank page, if not there already.
+  1. From the **Category** drop-down menu, select a category you want to add a question to.
+  1. The page will change to show the questions already in that category
+  1. Select the question type you want to create from the **Create new question** drop-down menu.
+  1. Fill in the form for the question type you are creating. Each question type has its own form and has its own options.
+  1. Click _Save Changes_ at the bottom of the form.
+
+## Preview, Edit, Delete, and Move ##
+The first column in the list of questions contains a number of icons and a selection box.
+
+Clicking on the **Preview** icon will open a preview window in which you can test the question. The **Edit** icon allows you to edit the question via the same form that you used to create it. The **Delete** icon deletes the question, provided it is not already in use in some activity. The selection box allows you to select a subset of questions that you can then move to another category using the controls below the list of questions.
+
+The **move** icon allows you to move one question at a time.
+
+==Tips and tricks==  # Put the answer into the question name so you can quickly see the answers when students are asking for answers. This is especially useful if you're dealing with large sets of questions! (No option yet for viewing category or answer of question in the list of questions.)
+  1. Remember that while some of the same question types can be found in both the Quiz and Lesson modules, they can be very different.  Scoring and grading each student's choice is more robust in a Quiz.  On the other hand, each Lesson question answer also has a jump associated it.
+  1. Use GIFT or other export modes to print questions and answers in a category.  Hint, clever use of word processor macros, using search and replace, can tidy up a GIFT file for printing.
+
+# Quick Quiz Creator #
+
+The Quick Quiz Creator (QQC) is a simple, easy alternative to the default question bank and quiz creator.  It provides an intuitive interface which allows you to create a quiz without many of the complications of the more advanced interface. and it provides more customizability as well: questions can be dragged-and-dropped into a preferred order, multiple answers can be marked as right or wrong and the QQC will calculate appropriate point values, and so on.  When you submit the questions in the QQC, a quiz is created and placed with the other quizzes, ready to be taken.
+
+When you submit the questions in the QQC, it places each one in the question bank with the tag "QQC [of test](name.md) QN [number](question.md)" to allow you to make any changes desired with the advanced interface.  Once these changes are made (or even if changes are not made), you may create quizzes with these questions as normal, even mixing and matching them with questions from other quizzes.
+
+# Question Types #
+
+## Multiple-Choice questions ##
+
+VINL provides teachers with a lot of flexibility when creating this common question type. You can create single-answer and multiple-answer questions, include pictures, sound or other media in the question and/or answer options (by inserting HTML) and weight individual answers.  There are two types of multiple choice questions - single answer and multiple answer.
+
+### Single-answer questions ###
+These questions allow one and only one answer to be chosen by providing radio buttons next to the answers. You will specify grades for each answer in multiples of quarter-points (usually zero points for wrong answers, one point for correct answers, and .5 points for partially correct answers).
+
+### Multiple-answer questions ###
+The teacher can select "multiple answers allowed" in a Multiple Choice question type. "Multiple answers" questions types in a quiz allow one or more answers to be chosen by providing check boxes next to the answers. Each answer may carry a positive or negative grade, so that choosing ALL the options will not necessarily result in good grade. If the total grade is negative then the total grade for this question will be zero.
+
+## Question set-up ##
+  1. Select the question category
+  1. Give the question a descriptive name. You'll use the name to track your questions later so "Question 1" isn't a good idea. The name will be used in the question lists on the quiz editing page or in the lesson as a page title. It will not be shown to the students, so you can choose any name that makes sense to you and possibly other teachers.
+  1. Create the question text. If you're using the HTML Editor, you can format the question just like a word processing document.
+  1. Select an image to display if you want to add a picture to the question. The available images are those you have uploaded to the VINL files area. For the student, the image appears immediately after the question text and before the answer options.
+  1. Alternatively, if you used the HTML editor to create the question text, you can click the image icon. This will pop up the Insert Image window. You can choose to upload an image into your files area from this window, or you can add the URL of an image on the web. If you add a file to your files area, click the name of the file after you upload it to insert the link into the URL text entry at the top of the screen. Then click OK.
+  1. Set the 'default question grade' (i.e. the maximum number of marks for this question).
+  1. Set the 'Penalty factor' (see Penalty factor, below).
+  1. Choose whether students can only select one answer or multiple answers
+  1. Choose whether to shuffle the answer options
+  1. Write your first answer in the Choice 1 text field.  Inserting HTML into this area also makes it possible to add an image or a sound file.
+  1. Select a grade percentage for the answer. This is the percentage of the total points for the question that selecting this response is worth. You can select negative percentages as well as positive percentages. So, selecting a correct response in a multiple answer question may give you 50% of the possible points, while selecting a wrong answer may take away 10%. Note that in a multiple-answer question, the grades must add up to 100%.
+  1. If you wish, you can add feedback for each response. It may be a bit more work, but it’s good practice to tell the students why each answer is right or wrong using the feedback area. If students know why an answer is right or wrong, they can analyse their own thinking and begin to understand why an answer is correct. Your feedback will only be displayed if you select Show Feedback in the quiz body options.
+  1. Fill in the rest of the response choices in the rest of the form. Any unused areas will be ignored.
+  1. Fill in the overall feedback fields if you wish.
+  1. Select the "Save Changes" button at the bottom of the screen.
+
+### Penalty factor ###
+
+The 'penalty factor' only applies when the question is used in a quiz using adaptive mode - i.e. where the student is allowed multiple attempts at a question even within the same attempt at the quiz. If the penalty factor is more than 0, then the student will lose that proportion of the **maximum** grade upon each successive attempt. For example, if the default question grade is 10, and the penalty factor is 0.2, then each successive attempt after the first one will incur a penalty of 0.2 x 10 = 2 points.
+
+## Overall feedback ##
+VINL includes options for adding overall feedback for partially correct or incorrect responses. This is particularly useful for multiple-response questions, where it is difficult to control what feedback students see just using the answer-specific feedback.
+
+So, when the student submits the question, they will see the answer-specific feedback next to the option(s) they selected, the overall feedback in a box below the options, and if applicable, the general feedback underneath everything else.
+
+## Fill-in-the-blank questions ##
+
+In a fill-in-the-blank question, the student types in a word or phrase in response to a question. Answers may or may not be case sensitive. The answer could be a word or a phrase, but it must match one of your acceptable answers exactly. It's a good idea to keep the required answer as short as possible to avoid missing a correct answer that's phrased differently.
+
+## Question set-up ##
+  1. Select the question category
+  1. Give your question a descriptive name.
+  1. Create the question text.
+  1. Tip: if the answer is intended to fill a gap in the text, use underscores to indicate where the gap is.
+  1. Set the 'default question grade' (i.e. the maximum number of marks for this question).
+  1. Set the 'Penalty factor' (see Penalty factor below).
+  1. Next, fill in the answers you will accept. You could give common misspellings partial credit with this option.  Use wildcards to allow for variants on a word pr phrase.
+  1. Add grade for each answer.
+  1. Click Save Changes to add the question to the category.
+
+### Penalty factor ###
+
+The 'penalty factor' only applies when the question is used in a quiz using adaptive mode - i.e. where the student is allowed multiple attempts at a question even within the same attempt at the quiz. If the penalty factor is more than 0, then the student will lose that proportion of the **maximum** grade upon each successive attempt. For example, if the default question grade is 10, and the penalty factor is 0.2, then each successive attempt after the first one will incur a penalty of 0.2 x 10 = 2 points.
+
+## Wildcard usage ##
+
+You can use the asterisk character (`*`) as a wildcard to match any series of characters. For example, use ran\*ing to match any word or phrase starting with _ran_ and ending with _ing_.
+
+If you want one question with the two answers _fuel_ and _oxygen_, you ought to be able to limit the number of variants  by writing fuel\*oxygen 100%. This would accept _"fuel oxygen", "fuel, oxygen", "fuel; oxygen", "fuel and oxygen", "fuel & oxygen" "fuel oxygen", "fuel  und oxygen" "fuel&&oxygen"_.
+
+The order of the answers is important. The answers are evaluated from 1st to last. When a match is found the process stops.  If no match is found the question is scored wrong.
+
+## Feedback for wrong answers ##
+
+When you wish to have fill-in-the-blank type questions, you naturally have a limited number of variations that would be acceptable. Effectively, ANYTHING other than the specific answers mentioned by you will be deemed wrong; it'll give 0 marks and show the feedback for a wrong answer.
+
+Here is an example:
+
+What is a rabbit?
+
+answer1: animal
+feedback: right
+grade: 100%
+
+answer2: mammal
+feedback: right
+grade: 100%
+
+answer3: vertebrate
+feedback: right
+grade: 100%
+
+answer4: `*`
+feedback: ouch! that was wrong
+grade: none
+
+## Numerical questions ##
+
+From the student perspective, a numerical question looks just like a short-answer question. The difference is that numerical answers are allowed to have an accepted error. This allows a continuous range of answers to be set.
+
+For example, if the answer is 30 with an accepted error of 5, then any number between 25 and 35 will be accepted as correct.
+
+Numerical questions can also have case-insensitive non-numerical answers. This is useful whenever the answer for a numerical question is something like N/A, +inf, -inf, NaN etc.
+
+Questions may have different answers with different levels of accuracy. That lets you create questions like "What is a root of x^2 - 3x + 2?" and award different levels of credit depending on the accuracy of the answer.
+
+## Question set-up ##
+
+  1. Select the question category
+  1. Give the question a descriptive name - this allows you to identify it in the question bank.
+  1. Enter a question in the 'question text' field. This can include an equation.
+  1. Now enter the first accepted answer(s). Note: Floating point numbers, e.g. 23.4, may also be written as 23,4 or 2.34E+1.
+  1. Enter an accepted error for this answer. This is the range above or below the answer that VINL will accept as a match. For example, if the correct answer is 5, but you will accept 4 or 6 as answers, your accepted error is 1.
+  1. Enter a grade for this answer.
+  1. Repeat for each of the answers you want to accept.
+  1. Units can also be specified. For example, if you enter a unit of 'cm' here, and the accepted answer is 15, then the answers '15cm' and '15' are both accepted as correct. You can also specify a multiplier. So, if your main answer was 5500 with unit W, you can also add the unit kW with a multiplier of 0.001. This means that the answers '5500', '5500W' or '5.5kW' would all be marked correct. Note that the accepted error is also multiplied, so an allowed error of 100W would become an error of 0.1kW.
+  1. Click 'Save changes' to add the question to the category.
+
+### Penalty factor ###
+
+The 'penalty factor' only applies when the question is used in a quiz using adaptive mode - i.e. where the student is allowed multiple attempts at a question even within the same attempt at the quiz. If the penalty factor is more than 0, then the student will lose that proportion of the **maximum** grade upon each successive attempt. For example, if the default question grade is 10, and the penalty factor is 0.2, then each successive attempt after the first one will incur a penalty of 0.2 x 10 = 2 points.

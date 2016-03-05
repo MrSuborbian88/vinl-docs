@@ -1,0 +1,16 @@
+# VINL Student Handbook #
+
+An Introduction to the VINL system for Student Users.
+
+
+# Log In #
+
+> Welcome, new Student, to the VINL system.  VINL stands for VINL Is Not LMS, so don’t get confused.  This guide is designed to help you create a VINL account and begin using its many features.  First off, you need to be at the home page for VINL.
+
+> In order to access the home page for the VINL system that you are accessing, you should ask your teacher for the URL.  Each educational institution can have its own copy of VINL, so the teacher requiring its use would be the best place to start.  Once you know the URL of the server, type it into your browser window and you should be brought to the home page of VINL.
+
+> Hopefully the administrator of this copy of VINL has everything set up nice and pretty.  There is a Log In box on the left side of the screen, as well as links to the Log In page located in the top right corner and at the bottom of the page.  If you do not already have a VINL account, you can click on the “create new account” link in the Log In box.  You should now be looking at a blank new account form.
+
+> It is important that you enter all of the correct information so that there is no confusion about your identity in the VINL system.  Filling out the form is simple:  type in the correct information into each designated text box.  If presented with a drop-down menu, please select the correct response from the list of choices.  Once you have filled out each box correctly, you can go ahead and click on the “create account” button located at the bottom of the page.  Also, know that at any point you can cancel out of the account creation by clicking on the Cancel button, also at the bottom of the page.
+
+> Once you have created your new VINL account, you are ready to enroll in classes listed on the VINL home page!

@@ -1,0 +1,121 @@
+The user **profile** page gathers together all the known information about a particular user.
+
+If you are a teacher, or looking at your own profile, then you will see some extra tabs allowing you to edit the profile settings, or providing detailed report and logs about the activity of that user.
+
+You may also see a link for each course you or the user belongs to. This depends on your privileges. If you are viewing your profile or are an administrator clicking on these links keeps you on the user's profile but alters the breadcrumb menu so you can quickly jump to that course.
+
+There may be buttons at the bottom of the view profile page depending on whose profile you are viewing and what permissions have been set.
+
+**Change password**
+This takes you to a form for changing your password.
+
+**Messages**
+:This opens the Messaging pop-up. It only shows when viewing your profile.
+
+**Send message**
+:This takes you to the Messaging pop-up and opens a messaging session with the user whose profile you were using. It only shows when viewing someone else's profile and if messaging is switched on by the administrator.
+
+## Updating Your Profile ##
+The fields are divided into 3 sections - General, Picture & Optional which are all explained below.  Note that some settings are 'advanced', so you may need to click the 'Show Advanced' button on the right to see all the settings. The advanced settings are indicated below.
+
+**Remember** to click 'Update profile' when you have finished.
+
+### General ###
+
+The first section contains fields that must be completed:
+
+'''First name & Surname'''
+
+These are self-explanatory. These names will identify you everywhere in your VINL courses.
+
+'''Email address'''
+
+The email address should be an address that you check regularly. It is used for acknowledgements and announcements from VINL, including messages from Forums that you are subscribed to. It is also the address that is displayed to other users of VINL, depending on your 'Email display' setting (below).
+
+'''Email display'''
+
+This controls the visibility of your email address to others.  The three settings are self-explanatory but please note 'Hide my email address from everyone' only hides it from students.  Teaching staff and other staff with editing access will always be able to see your email address.
+
+'''Email activated'''
+
+You can either enable or disable emails being sent to an address. Note that if this is disabled, you will not receive any email whatsoever from the site. This is not recommend, as you may miss important course-related messages.
+
+'''Email format (advanced)'''
+
+There are two formats: "Pretty HTML format" (messages will be formatted) and "Plain text format" (plain text with no formatting).
+
+'''Email digest type (advanced)'''
+
+This setting determines how you receive any posts from Forums to which you are subscribed, allowing you to receive messages individually or on a daily basis.
+
+'''Forum auto-subscribe (advanced)'''
+
+This setting lets you decide if you want email copies of posts that are added to forums. If you set this to subscribe, the system will automatically email you copies of new posts in forums that you post in, unless you manually override it when posting.
+
+'''Forum tracking (advanced)'''
+
+Enabling forum tracking means highlighting the posts you have not read yet, which should improve your forum navigation.
+
+'''When editing text (advanced)'''
+
+This can usually be left on "Use HTML editor (some browsers only)". This allows for text formatting options, but requires newer browsers. If you find your browser is not letting you edit text, change this setting to "Use standard web forms".
+
+'''AJAX and JavaScript (advanced)'''
+
+This determines whether the VINL interface will use advanced navigation features such as drag-and-drop, that require AJAX and JavaScript to function. These features can cause problems on some browsers so you might prefer to turn them off.
+
+'''Screen Reader (advanced)'''
+
+If you use a screen reader, this setting should be set to 'Yes'. (A screen reader is a form of 'assistive technology' used by blind and partially-sighted users to interpret what is displayed on the screen).
+
+'''City/town & Country'''
+
+Add your location.
+
+'''Timezone'''
+
+This field is used to convert time-related messages on the system (such as assignment deadlines) from the local timezone (the time in London) to the correct time in whichever zone you have selected.
+
+'''Preferred language and theme (advanced)'''
+
+You can view VINL in several different languages and colour themes, which you can select via these two options. Note: changing the preferred language only affects the VINL interface, not the course content!
+
+'''Description'''
+
+In this field you can enter some text about yourself, be it information about your studies, hobbies, qualifications or anything else.
+
+### Picture ###
+
+This section is optional and allows you to choose your own profile picture.  Your current picture is shown, if you have already chosen one.
+
+'''New picture'''
+
+The Browse button allows you to choose a new picture for your profile. Your picture is uploaded when you choose the 'Update Profile' at the bottom of the page.
+
+Your picture will be resized by VINL when you upload it - to 100 pixels by 100 pixels for the larger view (e.g. in your profile) and 35 pixels by 35 pixels for the smaller view (e.g. on the Forums). If the picture you upload is not square, VINL will automatically chop the edges off to make it square.
+
+### Optional ###
+
+There are several optional fields (all advanced) allowing you to add further details to your profile such as contact details and your website.
+
+## Adding a new user ##
+
+The add a new user page allows you to manually create a new user account. If you create a test account, you can use a made-up email address.
+
+The required field must be entered before the user will be accepted by VINL. The required fields in a standard VINL install are: Username, New password, Surname, Email address, City/town, Select a country.
+
+Validity checks on the required field are performed. For example, usernames can only contain alphabetical letters or numbers. As a result using the underscore character '_' is not permitted; however, using a period is permitted. So a username of joe\_smith would not be allowed but joe.smith is permissible. The email address should be in the format of a valid email (for example, joe.smith@myisp.com). If password complexity requirements are enabled by the site administrator, they new password field is also checked to ensure it complies with those requirements._
+
+Other fields that are part of a user's profile can also be filled out when the user is created. Some of the profile fields can be revealed by pressing the "Show Advanced" button.
+
+The new user information is saved by pressing the "Update user" button near the bottom of the form.
+
+Note: You can always create new accounts manually, regardless of which authentication method you are using.
+
+## Updating a user profile ##
+
+Users with the capability update are able to update another user's profile i.e. in addition to being able to edit the profile, all settings (username, password, authentication method, force new password etc.) may be changed.
+
+## Account disabling ##
+
+An account may be disabled by setting the authentication method to "No login". The account email may not be used to create another account.
